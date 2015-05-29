@@ -45,3 +45,22 @@ technology
 -H5SITEASDF000002
 -...
 ```
+
+####H5Show use of with STL
+##### How to define the code for a different devices by STL 
+```html
+the common code
+<stl:config>
+    <stl:style height="100%" backgroundUrl="{stl.templateUrl}/images/themebicycle1.jpg" backgroundSize="cover" animationName="fadeIn" animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animationIterationCount="2">	
+        background-position:0 bottom; 
+        background-repeat:no-repeat; 
+        box-sizing:border-box;
+    </stl:style>
+</stl:config>
+for phone
+<stl:style mediaType="phone" textAlign="center" width="100%"></stl:style>
+for pad
+<stl:style mediaType="pad"  width="420px" margin="0 auto"></stl:style>
+for pc
+<stl:style mediaType="pc"  width="420px" margin="0 auto"></stl:style>
+```
