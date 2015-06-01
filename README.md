@@ -84,9 +84,10 @@ technology
         GRADE  //here is the specific content 
     </stl:text>
 ```
-    As mentioned in the above code, the content area of the plain text we can use the text label to obtain. A text style definitions the following example put it wrote tags. Here we need to use the "Hump" writing, [Hump Code]. that attributes if there are two or more words composition is the "-" to remove, and put the second word in the first letter of the alphabet size. For example: font-family:"Microsoft Yahei"; We need to write：fontFamily="Microsoft Yahei".
+
+// As mentioned in the above code, the content area of the plain text we can use the text label to obtain. A text style definitions the following example put it wrote tags. Here we need to use the "Hump" writing, [Hump Code]. that attributes if there are two or more words composition is the "-" to remove, and put the second word in the first letter of the alphabet size. For example: font-family:"Microsoft Yahei"; We need to write：fontFamily="Microsoft Yahei".
     
-    STL some tags can be a single label, but some contain other labels must be written into the label. For example:
+// STL some tags can be a single label, but some contain other labels must be written into the label. For example:
 
 ```html
 //Yes
@@ -96,18 +97,21 @@ technology
 
 //No
 1、<stl:style mediaType="phone" fontSize="30px"> 
-// Although there is no containing the content, but the syntax is incorrect, if single label, need to use /> to end tag.
+// Although there is no containing the content, but the syntax is incorrect, 
+if single label, need to use /> to end tag.
 2、<stl:style mediaType="phone">font-size:30px; 
 //The tag contains the content, and can not be used in a single label
 ```
 Note: We strongly suggest that you use the "Hump the wording" to write the style to the STL grammar, so in the "Gexia platform, modifications, will display default values. It will also be easy to modify. There will not be many useless code in the page. For example:
 
 ```html
-<stl:style height="100%" backgroundUrl="{stl.templateUrl}/images/themebicycle1.jpg" backgroundSize="100% 100%" paddingTop="40px" lineHeight="1.5" animationName="fadeInUp" animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animationIterationCount="2" />
+<stl:style height="100%" backgroundUrl="{stl.templateUrl}/images/themebicycle1.jpg" 
+backgroundSize="100% 100%" paddingTop="40px" lineHeight="1.5" animationName="fadeInUp" 
+animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animationIterationCount="2" />
 ```
 
-###### \<stl:text\>\</stl:text\>  | <stl:text />  and <stl:textarea></stl:textarea>
-//Writing one <stl:text></stl:text>
+###### \<stl:text\>\</stl:text\>  | \<stl:text /\>  and \<stl:textarea\>\</stl:textarea\>
+//Writing one \<stl:text\>\</stl:text\>
 ```html
     <stl:text>
        <stl:style fontFamily="Microsoft Yahei" animationName="fadeInLeft" animationDuration="1s"
@@ -121,7 +125,7 @@ Note: We strongly suggest that you use the "Hump the wording" to write the style
         品位
     </stl:text>
 ```    
-//Writing two <stl:text></stl:text>
+//Writing two \<stl:text\>\</stl:text\>
 ```html
 <stl:config>
     <stl:style>
@@ -158,9 +162,9 @@ Note: We strongly suggest that you use the "Hump the wording" to write the style
     <stl:text value="成为中国软件行业最具竞争力的企业" />
 </div>
 ```
-The <stl:textare /> like the <stl:text>
+The \<stl:textare /\> like the \<stl:text\>
 
-###### <stl:a></stl:a>
+###### \<stl:a\>\</stl:a\>
 //Writing one
 ```html
 <stl:config>
@@ -201,7 +205,7 @@ The <stl:textare /> like the <stl:text>
 </stl:a>
 ```
 
-###### <stl:image></stl:image>
+###### \<stl:image\>\</stl:image\>
 ```html
 //Writing one 
 <stl:config>
@@ -242,7 +246,7 @@ The <stl:textare /> like the <stl:text>
 </stl:image>
 ```
 
-###### <stl:editor></stl:editor>
+###### \<stl:editor\>\</stl:editor\>
 //Writing one 
 ```html
 <stl:config>
@@ -286,7 +290,7 @@ The <stl:textare /> like the <stl:text>
     </stl:editor>
 ```
 
-###### <stl:box></stl:box>
+###### \<stl:box\>\</stl:box\>
 //Writing one 
 ```html
    <stl:box>
@@ -304,7 +308,7 @@ The <stl:textare /> like the <stl:text>
             </div>
     </stl:box>
 ```    
-Note: About <stl:data> some attribute description
+Note: About \<stl:data\> some attribute description
     name: Be arbitrary
     datatype: text | textarea | editor | image
     displayname: Be arbitrary
