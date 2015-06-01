@@ -46,12 +46,14 @@ technology
 -...
 ```
 
-####H5Show use of with STL
+#### H5Show use of with STL
 ##### How to define the code for a different devices by STL 
 //the common code
 ```html
 <stl:config>
-    <stl:style height="100%" backgroundUrl="{stl.templateUrl}/images/themebicycle1.jpg" backgroundSize="cover" animationName="fadeIn" animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animationIterationCount="2">	
+    <stl:style height="100%" backgroundUrl="{stl.templateUrl}/images/themebicycle1.jpg" backgroundSize="cover"
+    animationName="fadeIn" animationDuration="1s" animationTimingFunction="ease" animationDelay="0"
+    animationIterationCount="2">	
         background-position:0 bottom; 
         background-repeat:no-repeat; 
         box-sizing:border-box;
@@ -74,7 +76,7 @@ technology
 
 ##### How to obtain the specific content 
 ###### For example TEXT 
-``` html
+```html
     <stl:text>
        <stl:style fontFamily="Microsoft Yahei" marginTop="6px" animationName="fadeInRight" animationDuration="1s" animationTimingFunction="linear" animationDelay="1s" animationIterationCount="1"> display: block; </stl:style>
         <stl:style mediaType="phone" fontSize="30px" ></stl:style>
@@ -83,12 +85,9 @@ technology
         GRADE  //here is the specific content 
     </stl:text>
 ```
+// As mentioned in the above code, the content area of the plain text we can use the text label to obtain. A text style definitions the following example put it wrote tags. Here we need to use the "Hump" writing, [Hump Code]. that attributes if there are two or more words composition is the "-" to remove, and put the second word in the first letter of the alphabet size. For example: font-family:"Microsoft Yahei"; We need to write：fontFamily="Microsoft Yahei".
 
-    As mentioned in the above code, the content area of the plain text we can use the text label to obtain. A text style definitions the following example put it wrote tags. Here we need to use the "Hump" writing, [Hump Code]. that attributes if there are two or more words composition is the "-" to remove, and put the second word in the first letter of the alphabet size. For example: font-family:"Microsoft Yahei"; We need to write：fontFamily="Microsoft Yahei".
-    
-    STL some tags can be a single label, but some contain other labels must be written into the label. For example:
 
-Yes
 ```html
 1、<stl:style mediaType="phone" fontSize="30px" ></stl:style>
 2、<stl:style mediaType="phone" fontSize="30px" />
