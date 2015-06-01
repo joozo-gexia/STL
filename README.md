@@ -324,4 +324,6 @@ Note: About \<stl:data\> some attribute description
     
     {stl.data.name}  the name is "name" attribute
     
+    {stl.templateUrl} All paths need to be coupled with this label, including CSS, HTML, JS
+    
 
