@@ -76,13 +76,15 @@ technology
 ##### How to obtain the specific content 
 ###### For example TEXT 
 ```html
-    <stl:text>
-       <stl:style fontFamily="Microsoft Yahei" marginTop="6px" animationName="fadeInRight" animationDuration="1s" animationTimingFunction="linear" animationDelay="1s" animationIterationCount="1"> display: block; </stl:style>
-        <stl:style mediaType="phone" fontSize="30px" ></stl:style>
-        <stl:style mediaType="pad" fontSize="45px" ></stl:style>
-        <stl:style mediaType="pc" fontSize="50px" ></stl:style>
-        GRADE  //here is the specific content 
-    </stl:text>
+<stl:text>
+   <stl:style fontFamily="Microsoft Yahei" marginTop="6px" animationName="fadeInRight" 
+   animationDuration="1s" animationTimingFunction="linear" animationDelay="1s" 
+   animationIterationCount="1"> display: block; </stl:style>
+    <stl:style mediaType="phone" fontSize="30px" ></stl:style>
+    <stl:style mediaType="pad" fontSize="45px" ></stl:style>
+    <stl:style mediaType="pc" fontSize="50px" ></stl:style>
+    GRADE  //here is the specific content 
+</stl:text>
 ```
 
 // As mentioned in the above code, the content area of the plain text we can use the text label to obtain. A text style definitions the following example put it wrote tags. Here we need to use the "Hump" writing, [Hump Code]. that attributes if there are two or more words composition is the "-" to remove, and put the second word in the first letter of the alphabet size. For example: font-family:"Microsoft Yahei"; We need to write：fontFamily="Microsoft Yahei".
@@ -113,17 +115,17 @@ animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animati
 ###### \<stl:text\>\</stl:text\>  | \<stl:text /\>  and \<stl:textarea\>\</stl:textarea\>
 //Writing one \<stl:text\>\</stl:text\>
 ```html
-    <stl:text>
-       <stl:style fontFamily="Microsoft Yahei" animationName="fadeInLeft" animationDuration="1s"
-       animationTimingFunction="linear" animationDelay="1s" animationIterationCount="1"></stl:style>
-        <stl:style mediaType="phone" fontWeight="700" fontSize="30px" margin="0 0 0 10%"></stl:style>
-        <stl:style mediaType="pad" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" 
-        margin="0 auto" width="420px" fontSize="60px">
-        </stl:style>
-        <stl:style mediaType="pc" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" 
-        margin="0 auto" width="420px" fontSize="60px"></stl:style>
-        品位
-    </stl:text>
+<stl:text>
+   <stl:style fontFamily="Microsoft Yahei" animationName="fadeInLeft" animationDuration="1s"
+   animationTimingFunction="linear" animationDelay="1s" animationIterationCount="1"></stl:style>
+    <stl:style mediaType="phone" fontWeight="700" fontSize="30px" margin="0 0 0 10%"></stl:style>
+    <stl:style mediaType="pad" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" 
+    margin="0 auto" width="420px" fontSize="60px">
+    </stl:style>
+    <stl:style mediaType="pc" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" 
+    margin="0 auto" width="420px" fontSize="60px"></stl:style>
+    品位
+</stl:text>
 ```    
 //Writing two \<stl:text\>\</stl:text\>
 ```html
@@ -280,14 +282,14 @@ The \<stl:textare /\> like the \<stl:text\>
 ```
 //Writing two
 ```html
-    <stl:editor>
-        <stl:style  animationName="flip" animationDelay="1s" animationDuration=".5s" margin="0 10%">
-        text-shadow: 9px 9px 2px #dedede, 12px 12px 5px #ccc;</stl:style>
-        <stl:style mediaType="phone" fontSize="45px"  />
-        <stl:style mediaType="pad"  fontSize="65px"  />
-        <stl:style mediaType="pc"  fontSize="65px"  />
-        阁下互动产品
-    </stl:editor>
+<stl:editor>
+    <stl:style  animationName="flip" animationDelay="1s" animationDuration=".5s" margin="0 10%">
+    text-shadow: 9px 9px 2px #dedede, 12px 12px 5px #ccc;</stl:style>
+    <stl:style mediaType="phone" fontSize="45px"  />
+    <stl:style mediaType="pad"  fontSize="65px"  />
+    <stl:style mediaType="pc"  fontSize="65px"  />
+    阁下互动产品
+</stl:editor>
 ```
 
 ###### \<stl:box\>\</stl:box\>
@@ -297,7 +299,8 @@ The \<stl:textare /\> like the \<stl:text\>
         <stl:data name="title" datatype="text" displayname="标题" value="NIKE FREE iD专属定制" />
         <stl:data name="subtitle" datatype="text" displayname="副标题" value="觉醒天生动力，演绎专属魅力" />
         <stl:data name="url" datatype="text" displayname="链接" value="http://www.gexia.com" />
-        <stl:data name="pic" datatype="image" displayname="图片" value="{stl.templateUrl}/images/threeofthreepic.png" />
+        <stl:data name="pic" datatype="image" displayname="图片" 
+        value="{stl.templateUrl}/images/threeofthreepic.png" />
         <img src="{stl.data.pic}" alt="{stl.data.title}">
             <div class="jo-imgtitle jo-grey">
                 <div class="title"><a href="{stl.data.url}">{stl.data.title}</a>
@@ -308,10 +311,17 @@ The \<stl:textare /\> like the \<stl:text\>
             </div>
     </stl:box>
 ```    
+
 Note: About \<stl:data\> some attribute description
+
     name: Be arbitrary
+    
     datatype: text | textarea | editor | image
+    
     displayname: Be arbitrary
+    
     value： That is the content of the display
+    
     {stl.data.name}  the name is "name" attribute
+    
 
