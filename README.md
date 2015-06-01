@@ -89,13 +89,16 @@ technology
 
 
 ```html
+//Yes
 1、<stl:style mediaType="phone" fontSize="30px" ></stl:style>
 2、<stl:style mediaType="phone" fontSize="30px" />
 3、<stl:style mediaType="phone">font-size:30px;</stl:style>
 
-No
-1、<stl:style mediaType="phone" fontSize="30px"> // Although there is no containing the content, but the syntax is incorrect, if single label, need to use /> to end tag.
-2、<stl:style mediaType="phone">font-size:30px;  //The tag contains the content, and can not be used in a single label
+//No
+1、<stl:style mediaType="phone" fontSize="30px"> 
+// Although there is no containing the content, but the syntax is incorrect, if single label, need to use /> to end tag.
+2、<stl:style mediaType="phone">font-size:30px; 
+//The tag contains the content, and can not be used in a single label
 ```
 Note: We strongly suggest that you use the "Hump the wording" to write the style to the STL grammar, so in the "Gexia platform, modifications, will display default values. It will also be easy to modify. There will not be many useless code in the page. For example:
 
@@ -103,15 +106,18 @@ Note: We strongly suggest that you use the "Hump the wording" to write the style
 <stl:style height="100%" backgroundUrl="{stl.templateUrl}/images/themebicycle1.jpg" backgroundSize="100% 100%" paddingTop="40px" lineHeight="1.5" animationName="fadeInUp" animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animationIterationCount="2" />
 ```
 
-###### <stl:text></stl:text>  | <stl:text />  and <stl:textarea></stl:textarea>
+###### \<stl:text\>\</stl:text\>  | <stl:text />  and <stl:textarea></stl:textarea>
 //Writing one <stl:text></stl:text>
 ```html
     <stl:text>
-       <stl:style fontFamily="Microsoft Yahei" animationName="fadeInLeft" animationDuration="1s" animationTimingFunction="linear" animationDelay="1s" animationIterationCount="1"></stl:style>
+       <stl:style fontFamily="Microsoft Yahei" animationName="fadeInLeft" animationDuration="1s"
+       animationTimingFunction="linear" animationDelay="1s" animationIterationCount="1"></stl:style>
         <stl:style mediaType="phone" fontWeight="700" fontSize="30px" margin="0 0 0 10%"></stl:style>
-        <stl:style mediaType="pad" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" margin="0 auto" width="420px" fontSize="60px">
+        <stl:style mediaType="pad" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" 
+        margin="0 auto" width="420px" fontSize="60px">
         </stl:style>
-        <stl:style mediaType="pc" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" margin="0 auto" width="420px" fontSize="60px"></stl:style>
+        <stl:style mediaType="pc" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" 
+        margin="0 auto" width="420px" fontSize="60px"></stl:style>
         品位
     </stl:text>
 ```    
@@ -186,7 +192,8 @@ The <stl:textare /> like the <stl:text>
 //Writeing two
 ```html
 <stl:a href="http://m.gexia.com" style="color:#fff;">
-    <stl:style width="260px" borderRadius="8px" backgroundColor="rgba(255,255,255,0.4)">position: absolute; top: 300px; left: 50%; margin-left: -130px;</stl:style>
+    <stl:style width="260px" borderRadius="8px" backgroundColor="rgba(255,255,255,0.4)">
+    position: absolute; top: 300px; left: 50%; margin-left: -130px;</stl:style>
     <stl:style mediaType="phone"  height="40px" lineHeight="40px" fontSize="20px"></stl:style>
     <stl:style mediaType="pad"  height="50px" lineHeight="50px" fontSize="30px"></stl:style>
     <stl:style mediaType="pc"  height="50px" lineHeight="50px" fontSize="30px"></stl:style>
@@ -270,7 +277,8 @@ The <stl:textare /> like the <stl:text>
 //Writing two
 ```html
     <stl:editor>
-        <stl:style  animationName="flip" animationDelay="1s" animationDuration=".5s" margin="0 10%">text-shadow: 9px 9px 2px #dedede, 12px 12px 5px #ccc;</stl:style>
+        <stl:style  animationName="flip" animationDelay="1s" animationDuration=".5s" margin="0 10%">
+        text-shadow: 9px 9px 2px #dedede, 12px 12px 5px #ccc;</stl:style>
         <stl:style mediaType="phone" fontSize="45px"  />
         <stl:style mediaType="pad"  fontSize="65px"  />
         <stl:style mediaType="pc"  fontSize="65px"  />
@@ -302,14 +310,4 @@ Note: About <stl:data> some attribute description
     displayname: Be arbitrary
     value： That is the content of the display
     {stl.data.name}  the name is "name" attribute
-
-
-###### <stl:editor></stl:editor>
-```html
-//Writing one 
-
-
-//Writing two
-
-```
 
