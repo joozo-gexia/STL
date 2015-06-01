@@ -72,7 +72,6 @@ technology
 ```html
 <stl:style mediaType="pc"  width="420px" margin="0 auto"></stl:style>
 ```
-```
 
 ##### How to obtain the specific content 
 ###### For example TEXT 
@@ -85,8 +84,9 @@ technology
         GRADE  //here is the specific content 
     </stl:text>
 ```
-// As mentioned in the above code, the content area of the plain text we can use the text label to obtain. A text style definitions the following example put it wrote tags. Here we need to use the "Hump" writing, [Hump Code]. that attributes if there are two or more words composition is the "-" to remove, and put the second word in the first letter of the alphabet size. For example: font-family:"Microsoft Yahei"; We need to write：fontFamily="Microsoft Yahei".
-
+    As mentioned in the above code, the content area of the plain text we can use the text label to obtain. A text style definitions the following example put it wrote tags. Here we need to use the "Hump" writing, [Hump Code]. that attributes if there are two or more words composition is the "-" to remove, and put the second word in the first letter of the alphabet size. For example: font-family:"Microsoft Yahei"; We need to write：fontFamily="Microsoft Yahei".
+    
+    STL some tags can be a single label, but some contain other labels must be written into the label. For example:
 
 ```html
 //Yes
