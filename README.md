@@ -48,8 +48,8 @@ technology
 
 ####H5Show use of with STL
 ##### How to define the code for a different devices by STL 
-```html
 //the common code
+```html
 <stl:config>
     <stl:style height="100%" backgroundUrl="{stl.templateUrl}/images/themebicycle1.jpg" backgroundSize="cover" animationName="fadeIn" animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animationIterationCount="2">	
         background-position:0 bottom; 
@@ -57,17 +57,24 @@ technology
         box-sizing:border-box;
     </stl:style>
 </stl:config>
+```
 //for phone
+```html
 <stl:style mediaType="phone"></stl:style>
+```
 //for pad
+```html
 <stl:style mediaType="pad"></stl:style>
+```
 //for pc
+```html
 <stl:style mediaType="pc"  width="420px" margin="0 auto"></stl:style>
+```
 ```
 
 ##### How to obtain the specific content 
 ###### For example TEXT 
-```html
+``` html
     <stl:text>
        <stl:style fontFamily="Microsoft Yahei" marginTop="6px" animationName="fadeInRight" animationDuration="1s" animationTimingFunction="linear" animationDelay="1s" animationIterationCount="1"> display: block; </stl:style>
         <stl:style mediaType="phone" fontSize="30px" ></stl:style>
@@ -76,11 +83,13 @@ technology
         GRADE  //here is the specific content 
     </stl:text>
 ```
+
     As mentioned in the above code, the content area of the plain text we can use the text label to obtain. A text style definitions the following example put it wrote tags. Here we need to use the "Hump" writing, [Hump Code]. that attributes if there are two or more words composition is the "-" to remove, and put the second word in the first letter of the alphabet size. For example: font-family:"Microsoft Yahei"; We need to write：fontFamily="Microsoft Yahei".
     
     STL some tags can be a single label, but some contain other labels must be written into the label. For example:
-```html
+
 Yes
+```html
 1、<stl:style mediaType="phone" fontSize="30px" ></stl:style>
 2、<stl:style mediaType="phone" fontSize="30px" />
 3、<stl:style mediaType="phone">font-size:30px;</stl:style>
@@ -90,13 +99,14 @@ No
 2、<stl:style mediaType="phone">font-size:30px;  //The tag contains the content, and can not be used in a single label
 ```
 Note: We strongly suggest that you use the "Hump the wording" to write the style to the STL grammar, so in the "Gexia platform, modifications, will display default values. It will also be easy to modify. There will not be many useless code in the page. For example:
+
 ```html
 <stl:style height="100%" backgroundUrl="{stl.templateUrl}/images/themebicycle1.jpg" backgroundSize="100% 100%" paddingTop="40px" lineHeight="1.5" animationName="fadeInUp" animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animationIterationCount="2" />
 ```
 
 ###### <stl:text></stl:text>  | <stl:text />  and <stl:textarea></stl:textarea>
-```html
 //Writing one <stl:text></stl:text>
+```html
     <stl:text>
        <stl:style fontFamily="Microsoft Yahei" animationName="fadeInLeft" animationDuration="1s" animationTimingFunction="linear" animationDelay="1s" animationIterationCount="1"></stl:style>
         <stl:style mediaType="phone" fontWeight="700" fontSize="30px" margin="0 0 0 10%"></stl:style>
@@ -105,8 +115,9 @@ Note: We strongly suggest that you use the "Hump the wording" to write the style
         <stl:style mediaType="pc" padding="20px 0 20px 5%" fontSize="45px"  fontWeight="700" margin="0 auto" width="420px" fontSize="60px"></stl:style>
         品位
     </stl:text>
-    
+```    
 //Writing two <stl:text></stl:text>
+```html
 <stl:config>
     <stl:style>
         .unmberone {
@@ -135,7 +146,8 @@ Note: We strongly suggest that you use the "Hump the wording" to write the style
             成为中国软件行业最具竞争力的企业
     </stl:text>
 </div>
-
+```
+```html
 //html code with other writing
 <div class="numberone">
     <stl:text value="成为中国软件行业最具竞争力的企业" />
@@ -144,8 +156,8 @@ Note: We strongly suggest that you use the "Hump the wording" to write the style
 The <stl:textare /> like the <stl:text>
 
 ###### <stl:a></stl:a>
+//Writing one
 ```html
-//Writing one 
 <stl:config>
     <stl:style>
         .unmberone {
@@ -171,8 +183,9 @@ The <stl:textare /> like the <stl:text>
 <stl:a href="http://www.gexia.com" class="unmberone"  style="color:#fff;">
     从这里开始>>
 </stl:a>
-
+```
 //Writeing two
+```html
 <stl:a href="http://m.gexia.com" style="color:#fff;">
     <stl:style width="260px" borderRadius="8px" backgroundColor="rgba(255,255,255,0.4)">position: absolute; top: 300px; left: 50%; margin-left: -130px;</stl:style>
     <stl:style mediaType="phone"  height="40px" lineHeight="40px" fontSize="20px"></stl:style>
@@ -183,8 +196,8 @@ The <stl:textare /> like the <stl:text>
 ```
 
 ###### <stl:image></stl:image>
-//Writing one 
 ```html
+//Writing one 
 <stl:config>
     <stl:style>
         .unmberone {
