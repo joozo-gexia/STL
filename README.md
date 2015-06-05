@@ -112,7 +112,7 @@ backgroundSize="100% 100%" paddingTop="40px" lineHeight="1.5" animationName="fad
 animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animationIterationCount="2" />
 ```
 
-###### 1、 \<stl:text\>\</stl:text\>  | \<stl:text /\>  and \<stl:textarea\>\</stl:textarea\>
+# 1、 \<stl:text\>\</stl:text\>  | \<stl:text /\>  and \<stl:textarea\>\</stl:textarea\>
 //Writing one \<stl:text\>\</stl:text\>
 ```html
 <stl:text>
@@ -166,7 +166,7 @@ animationDuration="1s" animationTimingFunction="ease" animationDelay="0" animati
 ```
 The \<stl:textare /\> like the \<stl:text\>
 
-###### 2、\<stl:a\>\</stl:a\>
+# 2、\<stl:a\>\</stl:a\>
 //Writing one
 ```html
 <stl:config>
@@ -207,7 +207,7 @@ The \<stl:textare /\> like the \<stl:text\>
 </stl:a>
 ```
 
-###### 3、\<stl:image\>\</stl:image\>
+# 3、\<stl:image\>\</stl:image\>
 ```html
 //Writing one 
 <stl:config>
@@ -248,7 +248,7 @@ The \<stl:textare /\> like the \<stl:text\>
 </stl:image>
 ```
 
-###### 4、\<stl:editor\>\</stl:editor\>
+# 4、\<stl:editor\>\</stl:editor\>
 //Writing one 
 ```html
 <stl:config>
@@ -292,7 +292,7 @@ The \<stl:textare /\> like the \<stl:text\>
 </stl:editor>
 ```
 
-###### 5、\<stl:box\>\</stl:box\>
+# 5、\<stl:box\>\</stl:box\>
 //Writing one 
 ```html
    <stl:box>
